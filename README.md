@@ -30,3 +30,8 @@ External : http://extstweb.ibm.com/stwebclient/index.jsp (Need to use this full 
 Customers outside of IBM use their IBM ID (for ASIC customers they know this as their IBM Customer Connect ID)
 
 NOTE: as an IBM user you can also use the "external" extstweb.ibm.com to login when you are unable to VPN/ATTclient connect to IBM directly, just login with your IBM intranet ID.  The client is a simple client, you will not have your internal contact list, and other IBM internal users will likely not see you as online.
+
+
+
+http://www.bmc.com/forms/control-m-enterprise-free-trial-runaware.html?PURL=415800033
+http://www.runaware.com/clients/bmc/?product=ctm
