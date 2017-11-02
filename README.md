@@ -1442,3 +1442,38 @@ CLA004A_0010_FAC_XXXX_FA_ErCmcRunXc00 J#23518509 Run time: 21:00:27 - 21:17:10 M
 ###
 ### Track your job: ercmcrunxc00_344768876 ### 
 
+
+NOTE: THIS IS AN AUTO-GENERATED MESSAGE. PLEASE DO NOT RESPOND TO THIS EMAIL. REPLIES WILL NOT BE READ. 
+ 
+ 
+Dear GBD-Data Center OPS,
+ 
+Ticket has been assigned to your group for resolution. Please take necessary actions to resolve it within applicable timelines.
+ 
+Additional details about this ticket are:
+Incident Number : INC4158268 
+Priority : Priority 4
+Company : Anthem, Inc
+Requester : ENVISION SOAP
+Created : 2017-11-01 20:07:54
+Summary : CLA275_0010_INF_T275_ATTACHMENT_23527873: Major: Tidal Pri 1 Job Failure Job: CLA275_0010_INF_T275_ATTACHMENT Completed Abnormally Exit Code: 28060 Job Id: 23527873 Time: Nov 2,2017 0:7 CUT
+Description : Tidal Pri 1 Job Failure
+Job: CLA275_0010_INF_T275_ATTACHMENT
+Completed Abnormally
+Exit Code: 28060 Job Id: 23527873
+ 
+TicketGroup: GBD-Data Center OPS
+Date: Nov 2,2017 0:7 CUT Severity: Major
+ApplId: TIDAL
+Node: CLA275_0010_INF_T275_ATTACHMENT_23527873
+Manager: TIDAL: va01ptesapp011.corp.agp.ads10.100.109.52
+Agent: OCS-MIB
+AlertKey: CLA275_0010_INF_T275_ATTACHMENT_23527873113
+AlertGroup: abnorm
+EventKey: US980P0WLPP:73408580:wlp 
+ 
+Thank you
+ 
+Ref:MSGDEV63009171
+
+
