@@ -1,0 +1,91 @@
+va10plvapp113: Minor: High space used (93%) for /var Time: 11/26/2017 22:13:22.002
+
+High space used (93%) for /var
+
+TicketGroup: LINUX OS SUPPORT
+Date: 11/26/2017	Severity: Minor
+ResourceId: va10plvapp113.wellpoint.com
+
+InstanceId: /var
+InstanceSituation: Percent space used
+InstanceValue: 93%
+ComponentType: ComputerSystem
+Component: LINUX
+SubComponent: FileSystem
+ApplId: LINUX
+Node: wlp_va10plvapp113
+NodeAlias: 30.128.117.138
+Manager: EIF Probe on va10puvtos001
+Agent: EIF Probe on va10puvtos001
+AlertKey: wlp_fss_rlzw_std
+AlertGroup: ITM_Linux_Disk
+EventKey: US980P0WLPP:73577768:wlp
+-------------------------------------------------------------------------------------------------
+VS-Telephony: va10n30180: Critical: 30.135.40.211(30.135.40.211) is unreachable. The host has failed to respond to the ping request. Time: 11/26/17 15:38:33 EST
+
+30.135.40.211(30.135.40.211) is unreachable. The host has failed to respond to the ping request.
+
+TicketGroup: DEFAULT_EIF
+Date: 11/26/17 15:38:33 EST	Severity: Critical
+ResourceId: va10n30180.wellpoint.com
+
+InstanceId: 30.135.40.211
+InstanceSituation: Node Status
+InstanceValue: unreachable
+ComponentType: ComputerSystem
+Component: NodeAvail
+SubComponent: Ping
+MsgId: VA10PLVTEM011.wellpoint.com
+Node: va10n30180.wellpoint.com
+NodeAlias: 30.135.40.211
+Manager: Ping Probe
+Agent: Ping probe on VA10PLVTEM011.wellpoint.com
+AlertKey: ncopingprobe
+AlertGroup: PingStatus
+EventKey: US980P0WLPP:73577014:wlp
+--------------------------------------------------
+MULTIPLE: mom9p30004: Major: High inodes used (96%) for /var Time: 11/27/2017 00:47:19.000
+
+High inodes used (96%) for /var
+
+TicketGroup: LINUX OS SUPPORT
+Date: 11/27/2017	Severity: Major
+ResourceId: mom9p30004.wellpoint.com
+
+InstanceId: /var
+InstanceSituation: Percent inodes used
+InstanceValue: 96%
+ComponentType: ComputerSystem
+Component: LINUX
+SubComponent: FileSystem
+ApplId: LINUX
+Node: wlp_mom9p30004
+NodeAlias: 22.140.32.72
+Manager: EIF Probe on va10puvtos001
+Agent: EIF Probe on va10puvtos001
+AlertKey: wlp_ins_rlzc_std
+AlertGroup: ITM_Linux_Disk
+EventKey: US980P0WLPP:73578426:wlp
+-----------------------------------------------------------------------------
+MULTIPLE: mom9tlvwbs011: Minor: Process missing: /usr/bin/perl -w /opt/tail2syslog/tail2syslog.pl * Time: 11/26/2017 12:27:14.000
+
+Process missing: /usr/bin/perl -w /opt/tail2syslog/tail2syslog.pl *
+
+TicketGroup: LINUX OS SUPPORT
+Date: 11/26/2017	Severity: Minor
+ResourceId: mom9tlvwbs011.wellpoint.com
+
+InstanceId: /usr/bin/perl -w /opt/tail2syslog/tail2syslog.pl *
+InstanceSituation: Process missing
+InstanceValue: Missing
+ComponentType: OperatingSystem
+Component: LINUX
+SubComponent: Process
+ApplId: LINUX
+Node: wlp_mom9tlvwbs011
+NodeAlias: 30.134.32.13
+Manager: EIF Probe on va10puvtos001
+Agent: EIF Probe on va10puvtos001
+AlertKey: wlp_prcmis_rlzm_qradar
+AlertGroup: ITM_KLZ_Process
+EventKey: US980P0WLPP:73576549:wlp
