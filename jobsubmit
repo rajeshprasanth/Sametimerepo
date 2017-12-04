@@ -1,0 +1,71 @@
+#!/bin/bash
+#
+#Author: Rajesh A. Prashanth <raaprash@in.ibm.com>
+#Date: Mon Oct  9 11:48:05 IST 2017
+#Description: Job submit script for *nix systems
+#------------------------------------------------------------------------------------
+#Job executable settings
+#------------------------------------------------------------------------------------
+execpath="/usr/bin"
+execname="sleep"
+#------------------------------------------------------------------------------------
+#File I/O settings
+#------------------------------------------------------------------------------------
+inputfile="10"
+outputfile="test.out"
+errorfile="test.err"
+scriptlog="test.log"
+#------------------------------------------------------------------------------------
+#Mail settings
+#------------------------------------------------------------------------------------
+mailsendid=
+mailsendsmtpserver=
+mailsendsmtppasswd=
+mailsendsmtpportid=
+mailsendsubject=
+#------------------------------------------------------------------------------------
+#Job execution settings
+#------------------------------------------------------------------------------------
+timeout="3600s"
+numretry=
+
+#------------------------------------------------------------------------------------
+#Banner message
+#------------------------------------------------------------------------------------
+echo "+===============================================================+" >> $scriptlog
+echo "                     Job submission report" >> $scriptlog
+echo "+===============================================================+" >> $scriptlog
+echo "" >> $scriptlog
+echo "--------------" >> $scriptlog
+echo "Job Properties" >> $scriptlog
+echo "--------------" >> $scriptlog
+echo "    Command : "$execpath/$execname >> $scriptlog
+echo "    " >> $scriptlog
+echo "--------" >> $scriptlog
+echo "File I/O" >> $scriptlog
+echo "--------" >> $scriptlog
+echo "    Input Filename/Argument : " $inputfile >> $scriptlog
+echo "    Output Filename         : " $outputfile >> $scriptlog
+echo "    Error Filename          : " $errorfile >> $scriptlog
+echo "    Log Filename            : " $scriptlog >> $scriptlog
+echo " " >> $scriptlog
+echo "------------------" >> $scriptlog
+echo "Runtime Attributes" >> $scriptlog
+echo "------------------" >> $scriptlog
+echo "    Maximum walltime : "$timeout >> $scriptlog
+echo "    Maximum retries  : "$numretry >> $scriptlog
+echo "" >> $scriptlog
+nohup timeout $timeout $execpath/$execname $inputfile > $outputfile 2> $errorfile && touch JOBCOMPLETED &
+pidofjob=`echo $!`
+#call send mail function
+echo "--------------------" >> $scriptlog
+echo "Job Execution status" >> $scriptlog
+echo "--------------------" >> $scriptlog
+echo "    Job server       : "$HOSTNAME >> $scriptlog
+echo "    Job start        : "`date` >> $scriptlog
+echo "    Job id           : "$pidofjob >> $scriptlog
+echo "    Job kill command : kill "$pidofjob >> $scriptlog
+echo "">> $scriptlog
+echo "+===============================================================+" >> $scriptlog
+echo " Job submitted at "$HOSTNAME "with pid : "$pidofjob>> $scriptlog
+echo "+===============================================================+" >> $scriptlog
